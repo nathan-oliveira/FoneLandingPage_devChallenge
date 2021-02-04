@@ -66,3 +66,16 @@ img {
 li {
   list-style: none;
 }
+
+.animeLeft {
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: animePage .3s forwards;
+}
+
+@keyframes animePage {
+  to {
+    opacity: 1;
+    transform: initial;
+  }
+}
