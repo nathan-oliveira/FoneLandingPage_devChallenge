@@ -1,0 +1,68 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body,
+h1,
+h2,
+h3,
+ul,
+p {
+  padding: 0px !important;
+  margin: 0px !important;
+  font-family: 'Montserrat', Georgia, 'Times New Roman', Times, serif !important;
+}
+
+body {
+  color: #333;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  min-height: 81vh;
+}
+
+.container,
+.container-product,
+.footer-container {
+  display: flex !important;
+  margin: 0 auto !important;
+}
+
+.container {
+  max-width: 1280px !important;
+}
+
+.container-product {
+  max-width: 1080px !important;
+}
+
+.footer-container {
+  width: 790px !important;
+}
+
+.gatsby-image-wrapper>div {
+  padding-bottom: 0 !important;
+}
+
+img {
+  margin-bottom: 0 !important;
+  position: initial !important;
+}
+
+.col-12 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+li {
+  list-style: none;
+}

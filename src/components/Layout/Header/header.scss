@@ -1,0 +1,144 @@
+.menu {
+  padding: 5px 20px;
+
+  .menu_nav {
+    flex: 1;
+    margin: 0 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+
+    a {
+      order: 1;
+    }
+
+    ul.item_centro {
+      order: 2;
+    }
+
+    ul.item_direita {
+      order: 3;
+    }
+
+    .image-logo {
+      img {
+        width: 75px !important;
+        position: initial !important;
+      }
+    }
+
+    ul {
+      img {
+        cursor: pointer;
+      }
+    }
+
+    ul.item_centro,
+    ul.item_direita {
+      float: right;
+      display: flex;
+      list-style: none;
+    }
+
+    ul.item_centro {
+      li {
+        padding-left: 20px;
+
+        a {
+          position: relative;
+          cursor: pointer;
+          text-decoration: none;
+          color: initial;
+        }
+
+        a::after {
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 2px;
+          top: 110%;
+          left: 0;
+          background: #d01b24d7;
+          transition: transform 0.5s;
+          transform: scaleX(0);
+          transform-origin: left;
+        }
+
+        a:hover::after {
+          transform: scaleX(1);
+        }
+      }
+    }
+
+    ul.item_direita {
+      li {
+        padding-left: 16px;
+      }
+
+      .image-cart img,
+      .image-search img {
+        width: 20px !important;
+        position: initial !important;
+      }
+
+      .menuIcon {
+        text-decoration: none;
+        outline: none;
+        border: none !important;
+        background: transparent;
+        cursor: pointer;
+      }
+
+      .menuIcon::after {
+        cursor: pointer;
+        content: '';
+        display: block;
+        width: 1.26rem;
+        height: 2px;
+        border-radius: 2px;
+        background: #333;
+        box-shadow: 0 6px #333,
+          0 -6px #333;
+        transition: 0.2s;
+        margin-top: -6px;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .menu {
+    padding: 5px !important;
+  }
+
+  .menu_nav {
+    .item_active {
+      display: block !important;
+      border-bottom: 1px solid #e8e8e875;
+    }
+
+    .item_none {
+      display: none !important;
+    }
+
+    ul.item_centro {
+      order: 3 !important;
+      width: 100%;
+
+      li {
+        padding: 5px 0px;
+      }
+    }
+
+    ul.item_direita {
+      order: 2 !important;
+    }
+  }
+
+  .image-logo {
+    img {
+      width: 65px !important;
+    }
+  }
+}
